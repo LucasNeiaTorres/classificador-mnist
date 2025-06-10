@@ -1,7 +1,14 @@
 # classificador-mnist
 
 ## Descrição
-Este repositório contém um script classificador (usando kNN e classificador linear) para o dataset MNIST, que é um conjunto de dados de imagens de dígitos manuscritos. O script utiliza a biblioteca `scikit-learn` para treinar e avaliar o modelo. O objetivo é classificar imagens de dígitos manuscritos em suas respectivas classes (0-9). 
+Este repositório contém um script que realiza a classificação de dígitos manuscritos utilizando o dataset MNIST. Foram aplicados dois classificadores: **k-Nearest Neighbors (kNN)** e **classificador linear (SGDClassifier)**. Além disso, o script realiza:
+
+- Redução de dimensionalidade com **PCA (Principal Component Analysis)**;
+- Variações nas métricas de distância (`euclidean`, `manhattan`);
+- Diferentes valores de `k` no kNN;
+- Múltiplos tamanhos para os conjuntos de treino e teste.
+
+O script gera um arquivo `resultados_mnist.csv` com as acurácias para cada combinação testada, e o script `analysePCA.py` gera gráficos para inclusão em relatórios científicos.
 
 ## Pré-requisitos
 Certifique-se de ter o seguinte instalado em seu sistema:

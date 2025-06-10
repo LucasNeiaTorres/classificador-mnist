@@ -8,10 +8,10 @@ import numpy as np
 import pandas as pd
 
 # Parâmetros
-train_sizes = [5000, 7000, 10000]
-test_sizes = [2000, 3000]
-n_neighbors_list = [3, 5]
-n_components_list = [30, 50, 100]
+train_sizes = [5000, 7000, 10000, 12000]
+test_sizes = [2000, 3000, 4000]
+n_neighbors_list = [3, 5, 7]
+n_components_list = [30, 50, 100, 150]  
 distance_metrics = ['euclidean', 'manhattan']
 random_state = 42
 
